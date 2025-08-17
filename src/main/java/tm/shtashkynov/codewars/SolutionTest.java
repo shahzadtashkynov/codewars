@@ -1,15 +1,21 @@
 package tm.shtashkynov.codewars;
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.Test;
-
 
 public class SolutionTest {
-    @Test public void testSomething() {
-        assertEquals("8j8mBliB8gimjB8B8jlB", Kata.noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
-        assertEquals("88Bifk8hB8BB8BBBB888chl8BhBfd", Kata.noSpace("8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd"));
-        assertEquals("8aaaaaddddr", Kata.noSpace("8aaaaa dddd r     "));
-        assertEquals("jfBmgklf8hg88lbe8", Kata.noSpace("jfBm  gk lf8hg  88lbe8 "));
-        assertEquals("8jaam", Kata.noSpace("8j aam"));
+    @Test
+    public void checkingForOddNumbers() {
+        assertEquals(9, Sid.simpleMultiplication(1));
+        assertEquals(27, Sid.simpleMultiplication(3));
+        assertEquals(189, Sid.simpleMultiplication(21));
+        assertEquals(207, Sid.simpleMultiplication(23));
+    }
+
+    @Test
+    public void checkingForEvenNumbers() {
+        assertEquals(16, Sid.simpleMultiplication(2));
+        assertEquals(32, Sid.simpleMultiplication(4));
+        assertEquals(176, Sid.simpleMultiplication(22));
+        assertEquals(208, Sid.simpleMultiplication(26));
     }
 }
